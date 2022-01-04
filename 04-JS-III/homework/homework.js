@@ -97,7 +97,8 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  return Math.max(...numeros);
+  return Math.max.apply(null, numeros)
+  //return Math.max(...numeros); // Tambien se puede hacer con el spread operator.
 }
 
 
@@ -165,14 +166,8 @@ function mesesDelAño(array) {
   // Tu código:
   var nuevoArray=[];
   for(let i=0; i<array.length; i++){
-    if(array[i] === "Enero"){
-      nuevoArray.push("Enero");
-    }
-    if(array[i] === "Marzo"){
-      nuevoArray.push("Marzo");
-    }
-    if(array[i] === "Noviembre"){
-      nuevoArray.push("Noviembre");
+    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
+      nuevoArray.push(array[i]);
     }
   }
   for(let j=0; j<nuevoArray.length; j++){
