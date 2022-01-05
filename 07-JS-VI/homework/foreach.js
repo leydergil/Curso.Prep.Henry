@@ -9,16 +9,4 @@ lista.forEach(function(element, index){
     console.log(element);
     console.log(index);
     console.log (`${index} = (${element})`);
-})
-
-
-
-/// map devuelve un arreglo
-// con el resultado que retorna la ejecución de la funcion
-// del callback
-var agregarLetra = lista.map(function(x){
-    return x + "b";
-})
-
-console.log(agregarLetra);
-console.log(agregarLetra[3]);
+});

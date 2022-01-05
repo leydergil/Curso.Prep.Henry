@@ -63,7 +63,8 @@ function agregarStringInvertida() {
 
 
 var palabra = "leyder gil";
-reverse(palabra);
+reverse(palabra);// Invierte la palabra
+console.log(palabra.slice(1,5)); // indica donde inicia y donde termina de leerse una cadena
 
 function reverse(palabra){
  
