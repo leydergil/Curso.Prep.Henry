@@ -139,13 +139,12 @@ function pasarUsuarioAPremium(usuarios) {
     element.esPremium = true;
   });
   console.log(usuarios);
-  return usuarios;
-  
+ return usuarios;
 }
 
 var usuario = {
   nombre : "leyder",
-  apelllido : "gil",
+  apellido : "gil",
   posts : [ {id : 1, likes : 10, }, {id : 2, likes : 20, } ]
 };
 
